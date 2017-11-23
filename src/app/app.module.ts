@@ -7,19 +7,26 @@ import { IndexComponent } from './index/index.component';
 import { HomeComponent } from './home/home.component';
 import { JqueryComponent } from './jquery/jquery.component';
 
-import {MatToolbarModule} from '@angular/material/toolbar';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { MatToolbarModule, MatIconModule, MatButtonModule, MatMenuModule } from '@angular/material';
+import { AngularComponent } from './angular/angular.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
     HomeComponent,
-    JqueryComponent
+    JqueryComponent,
+    AngularComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

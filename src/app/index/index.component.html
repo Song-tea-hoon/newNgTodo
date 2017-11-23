@@ -1,4 +1,23 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <mat-toolbar color="primary">
   <span>Anguar Todo</span>
+  <span style="flex: 1 1 auto"></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/jquery">
+      <mat-icon>clear_all</mat-icon>
+      <span>jquery</span>
+    </button>
+    <button mat-menu-item routerLink="/angular">
+      <mat-icon>verified_user</mat-icon>
+      <span>angular</span>
+    </button>
+    <button mat-menu-item routerLink="/">
+      <mat-icon>home</mat-icon>
+      <span>home</span>
+    </button>
+  </mat-menu>
 </mat-toolbar>
 <router-outlet></router-outlet>
