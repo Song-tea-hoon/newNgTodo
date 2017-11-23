@@ -8,7 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { JqueryComponent } from './jquery/jquery.component';
 
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { MatToolbarModule, MatIconModule, MatButtonModule, MatMenuModule } from '@angular/material';
+import {
+  MatToolbarModule, MatIconModule, MatButtonModule, MatMenuModule, MatCardModule
+} from '@angular/material';
 import { AngularComponent } from './angular/angular.component';
 
 @NgModule({
@@ -27,6 +29,7 @@ import { AngularComponent } from './angular/angular.component';
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
