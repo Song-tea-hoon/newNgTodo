@@ -20,6 +20,7 @@ describe('IndexComponent', () => {
   });
 
   it('should create', () => {
+    console.log("Test");
     expect(component).toBeTruthy();
   });
 });

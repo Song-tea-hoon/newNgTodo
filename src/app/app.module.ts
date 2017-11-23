@@ -7,6 +7,7 @@ import { IndexComponent } from './index/index.component';
 import { HomeComponent } from './home/home.component';
 import { JqueryComponent } from './jquery/jquery.component';
 
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { JqueryComponent } from './jquery/jquery.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
