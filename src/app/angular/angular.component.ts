@@ -12,4 +12,7 @@ export class AngularComponent implements OnInit {
   ngOnInit() {
   }
 
+  add_todo(){
+    
+  }
 }

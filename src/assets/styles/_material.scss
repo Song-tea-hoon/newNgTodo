@@ -1,15 +1,16 @@
 $gutter: 1rem;
 
-body{
-  .mat-card{
-    padding:0;
-    margin:($gutter/2);
+body {
+  .mat-card {
+    padding: 0;
+    margin: ($gutter/2);
 
-    .mat-card-header{
-      height:auto;
+    .mat-card-header {
+      height: auto;
       background-color: #eeeeee;
     }
-    .mat-card-title{
+
+    .mat-card-title {
       padding-top: $gutter;
       padding-left: $gutter;
       padding-right: $gutter;
@@ -23,5 +24,31 @@ body{
       margin-bottom: 0;
       position: relative;
     }
+  }
+}
+
+$buttonColor: #337ab7;
+$buttonDark: darken($buttonColor, 10%);
+$buttonDarker: darken($buttonDark, 10%);
+
+button.active {
+  background-color: $buttonColor;
+  border: 0;
+  padding: 0.5rem;
+  color: white;
+  box-shadow: 4px 4px 6px $buttonDark;
+
+  &:hover {
+    background: $buttonDark;
+    box-shadow: 4px 4px 6px $buttonDarker;
+  }
+
+  &:active {
+    box-shadow: none;
+    -webkit-transform: translate(4px, 4px);
+    -moz-transform: translate(4px, 4px);
+    -ms-transform: translate(4px, 4px);
+    -o-transform: translate(4px, 4px);
+    transform: translate(4px, 4px);
   }
 }
