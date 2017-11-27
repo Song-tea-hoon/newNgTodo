@@ -8,12 +8,16 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { HomeComponent } from './home/home.component';
 import { JqueryComponent } from './jquery/jquery.component';
+import { AngularComponent } from './angular/angular.component';
+import { UserService } from './user.service';
+import { HttpClientModule } from '@angular/common/http'
 
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {
-  MatToolbarModule, MatIconModule, MatButtonModule, MatMenuModule, MatCardModule, MatFormFieldModule, MatInputModule
+  MatToolbarModule, MatIconModule, MatButtonModule, MatMenuModule,
+  MatCardModule, MatFormFieldModule, MatInputModule
 } from '@angular/material';
-import { AngularComponent } from './angular/angular.component';
+
 
 @NgModule({
   declarations: [
@@ -36,8 +40,9 @@ import { AngularComponent } from './angular/angular.component';
     MatFormFieldModule,
     MatInputModule,
     FlexLayoutModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
