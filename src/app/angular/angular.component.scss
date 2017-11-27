@@ -1,0 +1,30 @@
+@mixin customtranslate($top, $left){
+  -webkit-transform: translate($top, $left);
+  -moz-transform: translate($top, $left);
+  -ms-transform: translate($top, $left);
+  -o-transform: translate($top, $left);
+  transform: translate($top, $left);
+}
+
+$buttonColor: #337ab7;
+$buttonDark: darken($buttonColor, 10%);
+$buttonDarker: darken($buttonDark, 10%);
+button.active {
+  background-color: $buttonColor;
+  border: 0;
+  //padding: 0.5rem;
+  color: white;
+  box-shadow: 4px 4px 6px $buttonDark;
+  &:hover {
+    background: $buttonDark;
+    box-shadow: 4px 4px 6px $buttonDarker;
+  }
+  &:active {
+    box-shadow: none;
+    @include customtranslate(4px, 4px);
+  }
+}
+
+.todo_canceled{
+  text-decoration: line-through;
+}
