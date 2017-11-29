@@ -17,6 +17,8 @@ import { HomeComponent } from './home/home.component';
 import { JqueryComponent } from './jquery/jquery.component';
 import { AngularComponent } from './angular/angular.component';
 import { UserService } from './user.service';
+import { HighlightDirective } from './highlight.directive';
+import { MydatePipe } from './pipes/mydate.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { UserService } from './user.service';
     IndexComponent,
     HomeComponent,
     JqueryComponent,
-    AngularComponent
+    AngularComponent,
+    HighlightDirective,
+    MydatePipe,
   ],
   imports: [
     BrowserModule,

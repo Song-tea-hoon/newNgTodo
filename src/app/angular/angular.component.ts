@@ -47,7 +47,7 @@ export class AngularComponent implements OnInit {
   getTodoList() {
     this.userService.getTodoList()
     .then((data: Array<TodoVO>) => {
-      console.log(data);
+      console.log(`get todo list : `, data);
       this.todoList = data;
     })
   }
